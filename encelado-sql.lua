@@ -16,8 +16,18 @@ local encelado = {}
                         return self.driver
                     end,
 
-                    connect = function(self, sourcename, username, password)
-                        return self.driver:connect(sourcename, username, password)
+                    connect = function(self, env)
+                        local __env = env
+
+                        if __env.username ~= nil then
+                            __env.username_locktimeout = __env.username
+                        elseif __env.locktimeout ~= nil then
+                            __env.username_locktimeout = __env.locktimeout
+                        else
+                            __env.username_locktimeout = nil
+                        end
+                        
+                        return self.driver:connect(__env.sourcename, __env.username_locktimeout, __env.password, __env.hostname, __env.port, __env.socket, __env.client_flag)
                     end,
 
                     close = function(self)
@@ -83,6 +93,10 @@ local encelado = {}
             {value},
             {__index = 
                 {
+                    set_value = function(self, value_db)
+                        self.value = value_db
+                    end,
+
                     get_value = function(self)
                         return self.value
                     end,
@@ -103,7 +117,6 @@ local encelado = {}
     -- driver_db
     encelado.driver_db = {
         sqlite3 = require('luasql.sqlite3').sqlite3(),
-        mysql = require('luasql.mysql').mysql()
     }
     --
 
