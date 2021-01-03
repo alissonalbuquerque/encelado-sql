@@ -116,7 +116,11 @@ local encelado = {}
 
     -- driver_db
     encelado.driver_db = {
-        sqlite3 = require('luasql.sqlite3').sqlite3(),
+        sqlite3 = nil,
+        postgres = nil,
+        mysql = nil,
+        sqlite = nil,
+        odbc = nil
     }
     --
 
