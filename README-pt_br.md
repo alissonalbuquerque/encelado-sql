@@ -21,5 +21,5 @@ A encélado precisa da lib *LuaSQL* como dependencia e dos arquivos .lua citados
 
 ## EnceladoSQL Documentação
 
-* Documentação PT-BR
 * Documentação EN
+* Documentação PT-BR
