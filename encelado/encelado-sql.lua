@@ -88,7 +88,7 @@ local encelado = {}
     --
 
     -- DataSQL
-    function encelado.new_data_sql(value_db)
+    function encelado.data_sql(value_db)
         local class_data = setmetatable(
             {value},
             {__index = 
