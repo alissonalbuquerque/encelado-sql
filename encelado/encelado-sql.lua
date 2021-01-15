@@ -127,6 +127,7 @@ local encelado = {}
     -- lua_types
     encelado.lua_types = {
         table = 'table',
+        string = 'string'
         number = 'number',
         userdata = 'userdata'
     }
