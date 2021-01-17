@@ -114,23 +114,4 @@ local encelado = {}
     end
     --
 
-    -- driver_db
-    encelado.driver_db = {
-        sqlite3 = nil,
-        postgres = nil,
-        mysql = nil,
-        sqlite = nil,
-        odbc = nil
-    }
-    --
-
-    -- lua_types
-    encelado.lua_types = {
-        table = 'table',
-        string = 'string'
-        number = 'number',
-        userdata = 'userdata'
-    }
-    --
-
 return encelado
