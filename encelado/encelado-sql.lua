@@ -1,5 +1,15 @@
 
 local encelado = {}
+    
+    -- Const
+    encelado.NUM = 'n'
+
+    encelado.ALPHA = 'a'
+
+    encelado.NUMERIC = 'n'
+
+    encelado.ALPHA_NUM = 'a'
+    --
 
     -- Driver
     function encelado.new_driver(driver_db)
@@ -111,6 +121,45 @@ local encelado = {}
         class_data.value = value_db
 
         return class_data
+    end
+    --
+    
+    -- Cursor
+    function encelado.new_cursor(cursor_db)
+        local class_cursor = setmetatable(
+            {cursor},
+            {__index = 
+                {
+                    set_cursor = function(self, cursor_db)
+                        self.cursor = cursor_db
+                    end,
+
+                    get_cursor = function(self)
+                        return self.cursor
+                    end,
+
+                    next_row = function(self, str_mode)
+                        return self.cursor:fetch({}, str_mode)
+                    end,
+
+                    column_names = function(self)
+                        return self.cursor:getcolnames()
+                    end,
+
+                    column_types = function(self)
+                        return self.cursor:getcoltypes()
+                    end,
+
+                    close = function(self)
+                        return self.cursor:close()
+                    end
+                }
+            }
+        )
+
+        class_cursor.cursor = cursor_db
+
+        return class_cursor
     end
     --
 
