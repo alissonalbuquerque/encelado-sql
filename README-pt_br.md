@@ -11,7 +11,7 @@ A biblioteca conta com os seguintes modulos:
 * __encelado-sql.lua__ : modulo de classes para interação com os bancos de dados
 * __table-sql.lua__ : modulo de ORM (ainda não implementado)
 
-[Referencia: Documentação EnceladoSQL]()
+[Referencia: Documentação EnceladoSQL](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
 
 ## Instalação
 
@@ -33,7 +33,7 @@ luarocks install luasql-sqlite3
 luarocks install luasql-postgres
 ```
 
-[Referencia: Documentação LuaSQL]()
+[Referencia: Documentação LuaSQL](https://keplerproject.github.io/luasql)
 
 ### Instalação: EnceladoSQL
 
