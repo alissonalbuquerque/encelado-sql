@@ -25,11 +25,13 @@ Para ultilizar a biblioteca será necessário ter as seguintes dependencias inst
 
 Instale o modulo referente ao banco de dados que se pretende usar:
 
+```
 luarocks install luasql-odbc
 luarocks install luasql-mysql
 luarocks install luasql-sqlite
 luarocks install luasql-sqlite3
 luarocks install luasql-postgres
+```
 
 [Referencia: Documentação LuaSQL]()
 
@@ -37,7 +39,9 @@ luarocks install luasql-postgres
 
 Baixe o projeto encelado-sql e copie e cole a pasta "encelado" no seu diretorio de desenvolvimento:
 
+```
 git clone https://github.com/alissonalbuquerque/encelado-sql.git
+```
 
 ## Começando
 
