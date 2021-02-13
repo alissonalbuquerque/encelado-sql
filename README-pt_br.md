@@ -47,5 +47,5 @@ git clone https://github.com/alissonalbuquerque/encelado-sql.git
 
 ## EnceladoSQL Documentação
 
-* Documentação EN
-* Documentação PT-BR
+* [Documentação EN](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
+* [Documentação PT-BR](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc.md)
