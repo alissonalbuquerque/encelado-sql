@@ -11,15 +11,15 @@ A biblioteca conta com os seguintes módulos:
 * __encelado-sql.lua__ : classes para interação com o banco de dados
 * __table-sql.lua__ : ORM (ainda não implementado)
 
-[Referência: Documentação EnceladoSQL](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
+__[Referência: Documentação EnceladoSQL](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)__
 
 ## Instalação
 
 Para ultilizar a biblioteca é necessário ter as seguintes dependências instaladas:
 
-* Lua v5.1 ou mais
-* Lua Rocks v2.0 ou mais
-* LuaSQL 2.1 ou mais
+* __Lua v5.1 ou mais__
+* __Lua Rocks v2.0 ou mais__
+* __LuaSQL 2.1 ou mais__
 
 ### Instalação: LuaSQL
 
@@ -33,7 +33,7 @@ luarocks install luasql-sqlite3
 luarocks install luasql-postgres
 ```
 
-[Referência: Documentação LuaSQL](https://keplerproject.github.io/luasql)
+__[Referência: Documentação LuaSQL](https://keplerproject.github.io/luasql)__
 
 ### Instalação: EnceladoSQL
 
@@ -47,5 +47,5 @@ git clone https://github.com/alissonalbuquerque/encelado-sql.git
 
 ## EnceladoSQL Documentação
 
-* [Documentação EN](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
-* [Documentação PT-BR](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc.md)
+* __[Documentação EN](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)__
+* __[Documentação PT-BR](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc.md)__
