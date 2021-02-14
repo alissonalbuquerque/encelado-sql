@@ -3,27 +3,27 @@
 
 Encelado SQL é uma biblioteca escrita em lua para conexão e manipulação de bancos de dados relacionais.
 
-A biblioteca conta com os seguintes modulos:
+A biblioteca conta com os seguintes módulos:
 
-* __env.lua__ : modulo de configuração de ambiente de conexão com banco de dados
-* __driver.lua__ : modulo responsável pela atribuição e chamada dos drivers de bancos de dados
-* __lua_types.lua__ : modulo com strings de tipos de dados lua
-* __encelado-sql.lua__ : modulo de classes para interação com os bancos de dados
-* __table-sql.lua__ : modulo de ORM (ainda não implementado)
+* __env.lua__ : responsável pela configuração do ambiente de conexão com o banco de dados
+* __driver.lua__ : responsável pela atribuição e chamada dos drivers dos bancos de dados
+* __lua_types.lua__ : strings de descrição de tipos de dados da linguagem lua
+* __encelado-sql.lua__ : classes para interação com o banco de dados
+* __table-sql.lua__ : ORM (ainda não implementado)
 
-[Referencia: Documentação EnceladoSQL](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
+[Referência: Documentação EnceladoSQL](https://github.com/alissonalbuquerque/encelado-sql/blob/main/doc-pt_br.md)
 
 ## Instalação
 
-Para ultilizar a biblioteca será necessário ter as seguintes dependencias instaladas:
+Para ultilizar a biblioteca é necessário ter as seguintes dependências instaladas:
 
 * Lua v5.1 ou mais
-* Lua Rocks
-* LuaSQL
+* Lua Rocks v2.0 ou mais
+* LuaSQL 2.1 ou mais
 
 ### Instalação: LuaSQL
 
-Instale o modulo referente ao banco de dados que se pretende usar:
+Instale o módulo referente ao banco de dados que você pretende usar:
 
 ```
 luarocks install luasql-odbc
@@ -33,11 +33,11 @@ luarocks install luasql-sqlite3
 luarocks install luasql-postgres
 ```
 
-[Referencia: Documentação LuaSQL](https://keplerproject.github.io/luasql)
+[Referência: Documentação LuaSQL](https://keplerproject.github.io/luasql)
 
 ### Instalação: EnceladoSQL
 
-Baixe o projeto encelado-sql e copie e cole a pasta "encelado" no seu diretorio de desenvolvimento:
+Clone o projeto encelado-sql e copie e cole a pasta "encelado" no seu diretorio de desenvolvimento:
 
 ```
 git clone https://github.com/alissonalbuquerque/encelado-sql.git
