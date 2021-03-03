@@ -5,15 +5,15 @@
 
 ## Encelado SQL
 
-+ __encelado.new_driver(driver_db)__ : 
++ __encelado.new_driver(driver_db)__ : Recebe um driver de banco de dados (environment) e retorna uma classe driver 
 
-+ __class_driver:set_driver(driver_db)__ : 
++ __class_driver:set_driver(driver_db)__ : Recebe um driver de banco de dados (environment) e o atribuí a propriedade driver
 
-+ __class_driver:get_driver()__ : 
++ __class_driver:get_driver()__ : Retorna valor da propriedade driver
 
-+ __class_driver:connect(env)__ : 
++ __class_driver:connect(env)__ : Recebe uma tabela de configuração de ambiente de conexão e retorna uma conexão
 
-+ __class_driver:close()__ : 
++ __class_driver:close()__ : Fecha driver (environment) se não existir conexões abertas. Retorna _true_ em caso de sucesso e _false_ se o driver não for fechado ou se o driver já estiver fechado
 
 ------------------------------------------
 
