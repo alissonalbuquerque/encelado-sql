@@ -1,17 +1,19 @@
 
 # Documentação
 
+
+
 ## Encelado SQL
 
-encelado.new_driver(driver_db)
++ __encelado.new_driver(driver_db)__ : 
 
-class_driver:set_driver(driver_db)
++ __class_driver:set_driver(driver_db)__ : 
 
-class_driver:get_driver()
++ __class_driver:get_driver()__ : 
 
-class_driver:connect(env)
++ __class_driver:connect(env)__ : 
 
-class_driver:close()
++ __class_driver:close()__ : 
 
 ------------------------------------------
 
